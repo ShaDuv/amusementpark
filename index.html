@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-    <link href="css/styles.css" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
 
@@ -22,9 +22,16 @@
 
         <div class="row">
           <div class="col-md-12">
-              <form class="myform" method="post">
+              <form class="myform" method="post" action="index.html">
                 <label for="height">What is your height in inches?</label>
                 <input type="number" name="height" id="height">
+
+                <div class="radio">
+                  <label for="puke">What's your puke factor?</label>
+                  <lable><input type="radio" name="puke" value="1">Not Pukey</lable>
+                  <lable><input type="radio" name="puke" value="2">Slightly Pukey</lable>
+                  <lable><input type="radio" name="puke" value="3">Extra Pukey</lable>
+                </div>
                 <button class="btn btn-success" type="submit" name="button" id="submit">What can I ride?</button>
               </form>
           </div>
@@ -34,7 +41,7 @@
 <!-- kiddos -->
       <div class="row kidrow" id="kiddos">
           <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card tea" style="width: 18rem;">
               <img class="card-img-top" src="img/coaster7.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Mad Tea Party</h5>
@@ -47,7 +54,7 @@
 
 
           <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card elephant" style="width: 18rem;">
               <img class="card-img-top" src="img/coaster8.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Flying Elephant Ride</h5>
@@ -58,7 +65,7 @@
           </div>
 
           <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card carousel" style="width: 18rem;">
               <img class="card-img-top" src="img/coaster9.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Carousel</h5>
@@ -73,7 +80,7 @@
 
       <div class="row middlerow" id="middles">
           <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card inversion" style="width: 18rem;">
               <img class="card-img-top" src="img/coaster4.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Inversion</h5>
@@ -84,7 +91,7 @@
           </div>
 
           <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card mako" style="width: 18rem;">
               <img class="card-img-top" src="img/coaster5.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Mako</h5>
@@ -95,7 +102,7 @@
           </div>
 
           <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card golden" style="width: 18rem;">
               <img class="card-img-top" src="img/coaster6.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Golden Lasso</h5>
@@ -110,7 +117,7 @@
 
       <div class="row adultrow " id="adults">
           <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card hulk" style="width: 18rem;">
               <img class="card-img-top" src="img/coaster3.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">The Hulk</h5>
@@ -121,7 +128,7 @@
           </div>
 
           <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card park" style="width: 18rem;">
               <img class="card-img-top" src="img/coaster2.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Pacific Park</h5>
@@ -132,7 +139,7 @@
           </div>
 
           <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card grizzly" style="width: 18rem;">
               <img class="card-img-top" src="img/coaster1.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">The Grizzly</h5>
@@ -142,18 +149,14 @@
             </div>
           </div>
       </div>
-      <div class="row elserow">
+      <div class="row">
         <div class="col-md-12">
+          <div class="elserow">
           <h5>We are sorry!</h5>
           <p>Sadly we don't have any rides to accomodate your height at this time. Please check back as we are always growing.</p>
-
+          </div>
         </div>
-
       </div>
-
-
-
-
     </div>
   </body>
 </html>
